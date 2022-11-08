@@ -184,7 +184,7 @@ int main()
 
     //Assigning memory space in the GPU for the variables:
     if (cudaMalloc(&array_1, n * n * sizeof(double)) != cudaSuccess) {
-        std::cout << "Could not allocate d_a" << std::endl;
+        std::cout << "Could not allocate array_1" << std::endl;
     }
 
     if (cudaMalloc(&array_2, n * n * sizeof(double)) != cudaSuccess) {

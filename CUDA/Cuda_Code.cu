@@ -188,19 +188,19 @@ int main()
     }
 
     if (cudaMalloc(&array_2, n * n * sizeof(double)) != cudaSuccess) {
-        std::cout << "Could not allocate d_a" << std::endl;
+        std::cout << "Could not allocate array_2" << std::endl;
     }
 
     if (cudaMalloc(&temp_sum, grid * grid * sizeof(double)) != cudaSuccess) {
-        std::cout << "Could not allocate d_a" << std::endl;
+        std::cout << "Could not allocate temp_sum" << std::endl;
     }
 
     if (cudaMalloc(&sum, sizeof(double)) != cudaSuccess) {
-        std::cout << "Could not allocate d_a" << std::endl;
+        std::cout << "Could not allocate sum" << std::endl;
     }
 
     if (cudaMalloc(&verification_value, sizeof(double)) != cudaSuccess) {
-        std::cout << "Could not allocate d_a" << std::endl;
+        std::cout << "Could not allocate verification_value" << std::endl;
     }
 
 
